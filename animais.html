@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundBoard - Animais</title>
+    <link rel="shortcut icon" href="/assets/images/bateria.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body onresize="mudarTamanho()">
+    <header>
+        <button class="voltar" onclick="window.location.href='index.html'">
+            <h1 class="voltar-titulo">Voltar</h1>
+        </button>
+    </header>
+    <main>
+        <h1>ANIMAIS</h1>
+        <div id="destaque-som" class="destaque-som visible">
+            <img id="imagem-destaque" class="destaque-som__imagem" src="./imagens/galinha.jpg" alt="Imagem do som em destaque">
+        </div>
+        <section class="teclado">
+            <button class="tecla tecla_galinha"><img src="./imagens/galinha.jpg" alt="Galinha"></button>
+            <button class="tecla tecla_cavalo"><img src="./imagens/cavalo.jpg" alt="Cavalo"></button>
+            <button class="tecla tecla_cachorro"><img src="./imagens/cachorro2.jpg" alt="Cachorro"></button>
+
+            <button class="tecla tecla_gato"><img src="./imagens/gato.jpg" alt="Gato"></button>
+            <button class="tecla tecla_vaca"><img src="./imagens/vaca.jpg" alt="Vaca"></button>
+            <button class="tecla tecla_bode"><img src="./imagens/bode.jpg" alt="Bode"></button>
+
+           
+        </section>
+    </main>
+    <footer></footer>
+    <audio  src="./assets/Animais/galinhas.mp3" id="som_tecla_galinha"></audio>
+    <audio  src="./assets/Animais/cavalo_2.mp3" id="som_tecla_cavalo"></audio>
+    <audio  src="./assets/Animais/dog-barking-cachorro-latindo.mp3" id="som_tecla_cachorro"></audio>
+
+    <audio  src="./assets/Animais/gato-miau.mp3" id="som_tecla_gato"></audio>
+    <audio  src="./assets/Animais/cow1_1.mp3" id="som_tecla_vaca"></audio>
+    <audio  src="./assets/Animais/bode-gritando-2.mp3" id="som_tecla_bode"></audio>
+
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>
